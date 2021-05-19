@@ -45,37 +45,41 @@
     <div class="bg_imgPP">
         <section class="introInfo">
             <h1 class="section__title section__title--intro">
-                Hexagonal<strong> Primal Party</strong>
+                Multimodal Project<strong> TAILS</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">The Bamboozling Party Game</p>
+            <p class="section__subtitle section__subtitle--intro"> Multimodal Interactive Fiction</p>
             <img src="img/PrimalParty/TeamLogo.png" alt="" class="intro__imgInfo">
         </section>
     </div>
 
     <!-- My services -->
     <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What is Primal Party?</h2>
+        <h2 class="section__title section__title--services">What is TAILS?</h2>
         <div class="youtube-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/-Wz-QKZ6U2E" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
 
-
         <a href="https://hexagonal.itch.io/primal-party" target="_blank" class="btn">Website</a>
-        <a href="https://www.instagram.com/primalparty/" target="_blank" class="btn">Instagram</a>
-        <a href="https://www.facebook.com/PrimalPartyGame" target="_blank" class="btn">Facebook</a>
+
     </section>
 
 
     <!--About The Project-->
     <section class="portfolio-item-individual" id="about">
         <h2>Description</h2>
-        <h3>Developed using Unreal Engine 4</h3>
+        <h3>Developed using Android Studio, Unity and Director Musices</h3>
 
         <p>
-            Primal Party is a local multiplayer party game that focuses on 2vs2 competition. Initially the project was
-            part of a 10 week Game Design course at Uppsala University.
+            TAILS is a multimodal Interactive Fiction concept, created to make interactive fiction more immersive. Using
+            a story from Twine we implemented multiple modalities in Unity. We added text-to-speech from Android, music
+            using Director Musices and vibrotactile feedback using Unity3D. To evaluate the concept a study with six
+            expert participants was conducted where they were asked to compare the text based story with the TAILS
+            application. Although most of the participants preferred the multimodal experience of the story over the
+            unimodal version, the synthesized voice was perceived to be unpleasant and failing to describe the emotions
+            of the content.
+
         </p>
         <p>
             Primal Party developed by Team Hexagonal has been part of several events beyond the academic environment.
@@ -84,21 +88,59 @@
         </p>
         <h2 class="section__title section__title--about"><strong>Development process</strong></h2>
         <p>
-            The first version of Primal Party was developed during a 10 week period. The team Hexagonal of 6 members
-            consisted of 2 programmers, 3 artists and 1 project manager. The ambitious team worked full time for the
-            entire development utilizing scrum.
+            Taking into consideration the limited time and resources allotted to this project we set out to create a
+            simple prototype that demonstrates the potential of the TAILS concept. To develop this prototype we chose a
+            single Twine story, Invasion by Cat Manning*. This story was chosen after examining a multitude of different
+            Twine projects, evaluating them on criteria such as duration, complexity, interactivity and content
+            accessibility. The platform we decided to focus on is Android tablets, these tablets were chosen since we
+            required haptic feedback, large readable text and text-to-speech support.
         <p>
-            Each week consisted of daily standups, playtesting sessions, design meetings and team building activities.
-            The good synergy of the team and good progress of the project pushed us to aim for continuing the
-            development of the game further, participating in several events.
+            The default compiler for Twine exports stories into HTML. However, since HTML was suboptimal for our
+            technical requirements we opted to use Cradle, an open-source Unity Twine compiler developed by Doron
+            Assayas Terre. By using Cradle we were able to develop our prototype using Unity as our main development
+            environment. In addition to Unity, we used the Azure Text Analytics API to extract sentiment analysis scores
+            and KTH’s Director Musices was used to modify music according to the sentiment scores.
         </p>
-
+        <h2 class="section__title section__title--about"><strong>Evaluation</strong></h2>
+        <p>To assess the potential of the TAILS concept the multimodal prototype was evaluated in comparison to an
+            unmodified unimodal experience. The evaluation was performed using the combination of Think Aloud evaluation
+            and
+            a semi-structured interview. Six participants experienced both the unimodal and multimodal versions of the
+            experience and shared their insights and comments on both. Each evaluation session took approximately one
+            hour.</p>
+        <p>
+            Think Aloud is a method which prompts subjects to talk aloud while usually performing a task. It is
+            considered a
+            valuable method for understanding the user’s cognitive processes during the experience and forming a
+            task-related cognitive process model. The choice to use Think Aloud evaluation was based on the
+            suitability
+            of this method for time constrained projects as well as the availability of interaction designers as test
+            participants. By using Think Aloud we attempted to gain insight into the emotional effect of the
+            additional
+            modalities as well as the general perception of these modalities.</p>
+        <p>
+            The evaluation was conducted with a single user at a time in an isolated room in order to avoid distractions
+            from external factors. The same story was used for each user, with users experiencing the same story twice.
+            The
+            ordering of the different versions of the story (unimodal or multimodal) was split equally between users to
+            lessen ordering effects. Documentation of the evaluation was carried out by recording the interface while
+            transcribing the user’s comments.
+        </p>
+        <p>
+            After users experienced both the unimodal and multimodal version a short semi-structured interview was
+            conducted. The purpose of this interview was to enable the users to reflect on the different experiences,
+            engage
+            in guided speculation of an ideal multimodal experience and emphasize what they found enjoyable in both
+            versions
+            and what they found was lacking.
+        </p>
 
         <h2 class="section__title section__title--about"><strong>My Contributions</strong></p>
         </h2>
-        <h3>Development in Unreal Engine 4</h3>
-        <p>Focused mainly on developing the AI, UI and animation implementation. Developed the Coin Rush game mode.</p>
-        <h3>Game Design</h3>
+        <h3>TTS mod for Unity</h3>
+        <p>Developed a mod that allowed Unity to access Android functions such as Text-to-speech and Haptic Feedback,
+            utilized in the Project.</p>
+        <h3>Product Design</h3>
 
     </section>
 

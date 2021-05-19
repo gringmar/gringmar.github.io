@@ -661,3 +661,15 @@ header {
     color: var(--clr-light);
     
 }
+
+/*SRL*/
+.bg_imgSRL{
+    
+    background-color: var(--clr-dark);
+    background-image: url(../img/SRL/Planning.PNG);
+    background-size: cover;
+    position: relative;
+    background-blend-mode: multiply; 
+    color: var(--clr-light);
+    
+}
