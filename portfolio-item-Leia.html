@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+
+
+    <!--Update with own fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a> </li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">Portfolio</a> </li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a> </li>
+
+            </ul>
+        </nav>
+    </header>
+    <!--Introduction-->
+    <div class="bg_imgLeia">
+        <section class="introInfo">
+            <h1 class="section__title section__title--intro">
+                The Vikings<strong> Leia</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro"> Lecture Interactively</p>
+            <img src="img/Leia/logo.PNG" alt="" class="intro__imgInfo">
+        </section>
+    </div>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What is Leia?</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Easy to use</h3>
+                <p>Simple and intuitive user interface and easy login.
+                </p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Non-intrusive lecture interaction</h3>
+                <p>Possibility to ask anonymous and prioritize relevant questions to answer in class. Asking questions
+                    that do not interrupt the flow of the class or the train of thought of the lecturer
+
+                </p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Device agnostic</h3>
+                <p>Offers features that existing applications may lack in addition of being free and open source.</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+
+        <a href="https://github.com/The-Vikings/leia-elm" target="_blank" class="btn">Github</a>
+    </section>
+
+
+    <!--About The Project-->
+    <section class="portfolio-item-individual" id="about">
+        <h2>Description</h2>
+        <h3>Developed using Elm, Phoenix (Elixir), JS and CSS</h3>
+
+        <p>
+            A website that provides a real-time chat room for the lecture. Here the students can send
+            anonymous questions and the professors can respond digitally or verbally. Answers from
+            professors or fellow students can be crowd-sourced to automatically give answers to common
+            questions. Some select questions would also be answerable through online queries.
+
+        </p>
+
+        <h2><strong>Problem Definition</strong></h2>
+        <p>
+            Traditionally lectures in universities have been practicing passive teaching methods. This form of teaching
+            requires the lecturer to be able to convey the lecture without any unclarity or misunderstandings between
+            them and the students. In reality this is incredibly difficult, and research shows that a more active
+            approach to teaching produces
+            better results. In order to achieve the improved results it’s necessary for the lecturer to assess their
+            audience and allow them to ask questions.
+
+        <p>
+            In active teaching today there is a large communication distance between lecturer and students and little
+            interactivity between student and lecturer. This results in good questions going unasked, and there is no
+            way of prioritizing which questions asked are the most important ones.
+
+            In active teaching a lecturer also spends too much time answering simple questions that could be
+            automatically answered. This is an orthogonal problem of the interactive lecture-problem, though combining
+            the two solutions will synergize very well. The analysis of the two separate problem domains will be
+            analysed individually.
+        </p>
+
+        <p>
+            There have been several approaches to make tools to make teaching and lectures more active and the
+            communicative distance between lecturer and student smaller, but none of these tools solve the problems we
+            face in its entirety.
+        </p>
+        <h2><strong>Evaluation</strong></h2>
+        <p>
+            To evaluate the website, case studies that combined structured interviews and observation of users while
+            interacting with the website were conducted. Participants consisted of TAs, Professors and students from
+            KAIST
+            (Korean Advanced Institute of Science and Technology).</p>
+        <p>
+            Results show interest of using the website from all participants and percieved value. Obsertvations matched
+            users perception of easy-to-use interface, due to the low time from users in performing tasks. Users
+            opinions are ambiguous regarding the intrusiness of notifications, thus a flexible option to notifications
+            was included.
+        </p>
+        <p>
+            The architecture was benchmarked and showed promising results of low latency of 100 requests per second and
+            41.7 ms latency in the worst case scenario.
+        </p>
+
+        <h2 class="section__title section__title--about"><strong>My Contributions</strong></p>
+        </h2>
+        <h3>Design the UI of the website (Lead designer)
+        </h3>
+        <h3>Develop frontend features</h3>
+        <h3>Integrating frontend and backend
+        </h3>
+
+
+    </section>
+
+
+    <div class="portfolio-item-individual">
+
+        <h2 class="section__title section__title--about">Screenshots </h2>
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/Leia/muted.png" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/Leia/LeiaConnectUseCaseDiagram.png" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/Leia/LeiaDockerArch.png" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:g.ringmar@gmail.com" class="footer__link">g.ringmar@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://dribbble.com">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

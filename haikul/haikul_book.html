@@ -1,0 +1,314 @@
+
+<html>
+<head>
+		<script src="jquery-3.4.1.js"></script>
+</head>
+<title>Haikul workbook</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body {
+		width: 1024px;
+		margin: 0 auto;
+	}
+	div.page {
+		margin-top: 30px;
+	}
+	div.haiku {
+		margin: 0 auto;
+		width: 900px;
+		margin-bottom: 20px;
+	}
+	div.method {
+		margin: 0 auto;
+		width: 900px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 30px;
+		display: none;
+	}
+	div.hidden {
+		display: none;
+	}
+	div.flow {
+		margin: 50 auto;
+		text-align: center;
+	}
+	button {
+		font-size: 30pt;
+	}
+</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<div class="page" id="intro">
+		<div class="haiku" id="intro_first">
+				<img src="images/slice_haiku_1_01.png" width="1000" alt="">
+		</div>
+		<div class="method" id="intro_first">
+			<img src="images/intro_text_01.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="intro_second">
+				<img src="images/slice_haiku_1_02.png" width="1000" alt="">
+		</div>
+		<div class="method" id="intro_second">
+				<img src="images/intro_text_02.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="intro_third">
+				<img src="images/slice_haiku_1_03.png" width="1000" alt="">
+		</div>
+		<div class="method" id="intro_third">
+				<img src="images/intro_text_03.png" width="1000" alt="">
+		</div>
+		<div class="flow">
+				<button id="discover">flow</button>
+		</div>
+</div>
+<div class="page hidden" id="discover">
+		<div class="haiku" id="disc_first">
+				<img src="images/slice_haiku_2_01.png" width="1000" alt="">
+		</div>
+		<div class="method" id="disc_first">
+				<img src="images/disc_text_01.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="disc_second">
+				<img src="images/slice_haiku_2_02.png" width="1000" alt="">
+		</div>
+		<div class="method" id="disc_second">
+				<img src="images/disc_text_02.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="disc_third">
+				<img src="images/slice_haiku_2_03.png" width="1000" alt="">
+		</div>
+		<div class="method" id="disc_third">
+				<img src="images/disc_text_03.png" width="1000" alt="">
+		</div>
+		<div class="flow">
+				<button id="define">flow</button>
+		</div>
+</div>
+<div class="page hidden" id="define">
+		<div class="haiku" id="def_first">
+				<img src="images/slice_haiku_3_01.png" width="1000" alt="">
+		</div>
+		<div class="method" id="def_first">
+				<img src="images/def_text_01.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="def_second">
+				<img src="images/slice_haiku_3_02.png" width="1000" alt="">
+		</div>
+		<div class="method" id="def_second">
+				<img src="images/def_text_02.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="def_third">
+				<img src="images/slice_haiku_3_03.png" width="1000" alt="">
+		</div>
+		<div class="method" id="def_third">
+				<img src="images/def_text_03.png" width="1000" alt="">
+		</div>
+		<div class="flow">
+				<button id="develop">flow</button>
+		</div>
+</div>
+<div class="page hidden" id="develop">
+		<div class="haiku" id="dev_first">
+				<img src="images/slice_haiku_4_01.png" width="1000" alt="">
+		</div>
+		<div class="method" id="dev_first">
+				<img src="images/dev_text_01.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="dev_second">
+				<img src="images/slice_haiku_4_02.png" width="1000" alt="">
+		</div>
+		<div class="method" id="dev_second">
+				<img src="images/dev_text_02.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="dev_third">
+				<img src="images/slice_haiku_4_03.png" width="1000" alt="">
+		</div>
+		<div class="method" id="dev_third">
+				<img src="images/dev_text_03.png" width="1000" alt="">
+		</div>
+		<div class="flow">
+				<button id="conclusion">flow</button>
+		</div>
+</div>
+<div class="page hidden" id="conclusion">
+		<div class="haiku" id="con_first">
+				<img src="images/slice_haiku_5_01.png" width="1000" alt="">
+		</div>
+		<div class="method" id="con_first">
+				<img src="images/con_text_01.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="con_second">
+				<img src="images/slice_haiku_5_02.png" width="1000" alt="">
+		</div>
+		<div class="method" id="con_second">
+				<img src="images/con_text_02.png" width="1000" alt="">
+		</div>
+		<div class="haiku" id="con_third">
+				<img src="images/slice_haiku_5_03.png" width="1000" alt="">
+		</div>
+		<div class="method" id="con_third">
+				<img src="images/con_text_03.png" width="1000" alt="">
+		</div>
+		<div class="flow">
+				<button id="intro">flow</button>
+		</div>
+</div>
+
+
+
+<script>
+		$( ".haiku#intro_first" ).click(function() {
+		  $( ".method#intro_first" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#intro_first").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#intro_second" ).click(function() {
+		  $( ".method#intro_second" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#intro_second").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#intro_third" ).click(function() {
+		  $( ".method#intro_third" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#intro_third").offset().top
+			}, 1000);
+		  } );
+		});
+		
+		$( ".haiku#disc_first" ).click(function() {
+		  $( ".method#disc_first" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#disc_first").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#disc_second" ).click(function() {
+		  $( ".method#disc_second" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#disc_second").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#disc_third" ).click(function() {
+		  $( ".method#disc_third" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#disc_third").offset().top
+			}, 1000);
+		  } );
+		});
+
+		$( ".haiku#def_first" ).click(function() {
+		  $( ".method#def_first" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#def_first").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#def_second" ).click(function() {
+		  $( ".method#def_second" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#def_second").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#def_third" ).click(function() {
+		  $( ".method#def_third" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#def_third").offset().top
+			}, 1000);
+		  } );
+		});
+
+		$( ".haiku#dev_first" ).click(function() {
+		  $( ".method#dev_first" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#dev_first").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#dev_second" ).click(function() {
+		  $( ".method#dev_second" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#dev_second").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#dev_third" ).click(function() {
+		  $( ".method#dev_third" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#dev_third").offset().top
+			}, 1000);
+		  } );
+		});
+
+		$( ".haiku#con_first" ).click(function() {
+		  $( ".method#con_first" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#con_first").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#con_second" ).click(function() {
+		  $( ".method#con_second" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#con_second").offset().top
+			}, 1000);
+		  } );
+		});
+		$( ".haiku#con_third" ).click(function() {
+		  $( ".method#con_third" ).slideToggle( "slow", function() {
+			$('html, body').animate({
+    			scrollTop: $(".method#con_third").offset().top
+			}, 1000);
+		  } );
+		});
+
+		$( "button#discover" ).click(function() {
+		  $( ".page#intro" ).fadeOut( "slow",function (){
+			$( ".page#discover" ).fadeIn("slow");
+			$('html, body').animate({
+    			scrollTop: 0
+			}, 1000);
+		  });
+		});
+		$( "button#define" ).click(function() {
+		  $( ".page#discover" ).fadeOut( "slow",function (){
+			$( ".page#define" ).fadeIn("slow")
+			$('html, body').animate({
+    			scrollTop: 0
+			}, 1000);
+		  });
+		});
+		$( "button#develop" ).click(function() {
+		  $( ".page#define" ).fadeOut( "slow",function (){
+			$( ".page#develop" ).fadeIn("slow")
+			$('html, body').animate({
+    			scrollTop: 0
+			}, 1000);
+		  });
+		});
+		$( "button#conclusion" ).click(function() {
+		  $( ".page#develop" ).fadeOut( "slow",function (){
+			$( ".page#conclusion" ).fadeIn("slow")
+			$('html, body').animate({
+    			scrollTop: 0
+			}, 1000);
+		  });
+		});
+		$( "button#intro" ).click(function() {
+		  $( ".page#conclusion" ).fadeOut( "slow",function (){
+			$( ".page#intro" ).fadeIn("slow")
+			$('html, body').animate({
+    			scrollTop: 0
+			}, 1000);
+		  });
+		});
+</script>
+</body>
+</html>
