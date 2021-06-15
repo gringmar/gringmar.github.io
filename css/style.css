@@ -730,3 +730,9 @@ header {
 
     color: var(--clr-dark);
 }
+
+.manualSlides {display:none;}
+
+.manualSlides{
+    max-height: 436px;
+}
